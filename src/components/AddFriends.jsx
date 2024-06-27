@@ -5,13 +5,15 @@ import { v4 as uuidv4 } from "uuid";
 import BasicSelect from "./Select";
 import TextFields from "./Input";
 import * as React from "react";
-
+import { useContext } from "react";
+import { appContext } from "../App";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { Block } from "@mui/icons-material";
-function AddFriends({ setDisplay }) {
+
+function AddFriends() {
+  const { setDisplay } = useContext(appContext);
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [color, setColor] = useState("");
@@ -52,8 +54,8 @@ function AddFriends({ setDisplay }) {
                 favcolor: friend.color,
                 img:
                   img === "Yes"
-                    ? `https://i.pravatar.cc/${150}?u=${randomId}}`
-                    : `https://wallpapers-clan.com/wp-content/uploads/2022/08/default-pfp-18.jpg`,
+                    ? `https://i.pravatar.cc/${250}?u=${randomId}}`
+                    : `https://i.pravatar.cc/${250}?u=2`,
               }),
             }
           );

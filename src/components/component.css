@@ -1,17 +1,3 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    border: 2px solid #640D6B;
-
-    padding: 16px;
-    min-width: 250px;
-    align-items: start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-
 .display {
     display: flex;
     flex-direction: row;
@@ -19,6 +5,7 @@
     padding: 20px;
     flex-wrap: wrap-reverse;
     justify-content: flex-start;
+    overflow: hidden;
 
 }
 
@@ -29,18 +16,7 @@
     margin: 8px;
 }
 
-.card img {
-    width: 100%;
-    height: fit-content;
-}
 
-#dp {
-    border-radius: 50%;
-    max-width: 60px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
 
 
 .card button {

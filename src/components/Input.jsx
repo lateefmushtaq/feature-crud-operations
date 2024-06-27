@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-export default function TextFields({ value, onChange }) {
+export default function TextFields({ value, onChange, placeholder, type }) {
   return (
     <Box
       component="form"
@@ -16,10 +16,11 @@ export default function TextFields({ value, onChange }) {
       <TextField
         sx={{ minWidth: "25%" }}
         id="outlined-basic"
-        label="Outlined"
+        label={placeholder}
         variant="outlined"
         value={value}
         onChange={onChange}
+        type={type}
       />
     </Box>
   );
